@@ -8,7 +8,7 @@ proGres-cube is an HTTP OLAP cube server for aggregation queries:
 
 The repository contains configuration file for lightweight python file:
 * [Cube Server](http://cubes.databrewery.org/) running on [http://localhost:5000](http://localhost:5000)
-* [Cube Viewer](http://jjmontesl.github.io/cubesviewer/) running on [http://localhost:5000](http://localhost:5000)
+* [Cube Viewer](http://jjmontesl.github.io/cubesviewer/) running on [http://localhost:8000](http://localhost:8000)
 
 
 ## Project Description
