@@ -1,0 +1,140 @@
+{
+    "dimensions": [
+
+        {
+            "name": "ARD",
+            "label": "Date of arrival",
+
+            "levels": [
+                {
+                    "name": "year",
+                    "label": "Year",
+                    "attributes": [
+                        {"name": "year", "order": "asc"}
+                    ]
+                },
+
+                {
+                    "name": "month",
+                    "label": "Month",
+                    "attributes": [
+                        {"name": "month", "order": "asc"}
+
+                    ]
+                },
+                {
+                    "name": "day",
+                    "label": "Day",
+                    "attributes": [
+                        {"name": "day", "order": "asc"}
+                    ]
+                }
+
+            ],
+            "hierarchies": [
+                {
+                    "name": "ymd",
+                    "levels": ["year", "month", "day"]
+                }
+
+            ]
+        },
+
+        {
+            "name": "RGD",
+            "label": "Registration date"
+
+         },
+
+        {
+            "name": "Sex",
+            "label": "Gender"
+        },
+
+        {
+            "name": "CountryOfOrigin",
+            "label": "Country of Origin"
+        },
+
+        {
+            "name": "AsylumCountryCode",
+            "label": "Country of Asylum"
+        },
+
+        {
+          "name":"VulnerabilityText",
+          "label":"vulnerabilty"
+        },
+
+        {
+            "name": "IndividualAgeCohortCode",
+            "label": "Age range"
+        },
+
+        {
+            "name": "EthnicityCode",
+            "label": "Ethnicity"
+        },
+        {
+            "name": "vulnerabilitydetailstext",
+            "label": "Vulnerability Details"
+        },
+        {
+            "name": "EthnictyText",
+            "label": "Ethnicity"
+        },
+        {
+            "name": "RefugeeStatusCode",
+            "label": "Refugee Status",
+            "info": { "cv-datefilter-field": "ProcessStatusCode" }
+        },
+
+        {
+            "name": "ProcessStatusCode",
+            "label": "Status",
+            "info": { "cv-datefilter-field": "ProcessStatusCode" }
+        },
+
+        {
+            "name": "NationalityCode",
+            "label": "Nationality"
+        }
+
+    ],
+    "cubes": [
+
+        {
+            "name": "DataIndividual",
+            "label": "Refugee / Biodata",
+            "category": "proGres Data",
+            "dimensions": ["ARD", "RGD","IndividualAgeCohortCode", "Sex","EthnictyText","VulnerabilityText","vulnerabilitydetailstext","CountryOfOrigin","AsylumCountryCode","EthnicityCode","RefugeeStatusCode","ProcessStatusCode","NationalityCode"],
+
+            "measures":
+            [
+
+              {"name": "Dup", "aggregates": ["sum"] }
+
+            ],
+
+          "aggregates":
+          [
+            {
+            "name": "Total",
+            "label": "Total Number of Registered refugees (A,C.I,H)",
+            "function": "sum",
+            "measure": "Dup"
+            }
+           ],
+
+          "mappings": {
+                "ARD.year": "DataIndividual.year",
+                "ARD.month": "DataIndividual.month",
+                "ARD.day": "DataIndividual.day"
+
+            }
+
+        }
+
+    ]
+
+}
