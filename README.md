@@ -60,4 +60,5 @@ cd C:\cube\cubesviewer-master\src\web\project
 Then run the script
 ```python
 python manage.py syncdb
+Python manage.py runserver
 ```
