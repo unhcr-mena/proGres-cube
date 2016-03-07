@@ -56,7 +56,7 @@ git clone git://github.com/DataBrewery/cubes.git
 
 Move to the folder where the cubes viewer files are
 ```
-cd C:\cube\cubes-master\examples\hello_world
+cd C:\cube\cubes\examples\hello_world
 ```
 
 Then run the script to prepare data and run the OLAP server:
@@ -78,7 +78,7 @@ git clone git://github.com/jjmontesl/cubesviewer.git
 
 Move to the folder where the cubes viewer files are
 ```
-cd C:\cube\cubesviewer-master\src\web\project
+cd C:\cube\cubesviewer\src\web\project
 ```
 
 Then run the script
