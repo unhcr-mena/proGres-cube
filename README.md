@@ -23,6 +23,10 @@ This directory contains following files:
 
 ## Installation instruction
 
+You need to install [Python 2.7](https://www.python.org/downloads/)
+
+Then you will need to get the following modules from Python. Open a CMD and run the command belows:
+
 ```python
 pip install cubes[all]
 pip install Django
@@ -35,7 +39,15 @@ pip install djangorestframework
 pip install wsgiref
 ```
 
+You may also need to install the github client in order to donwload the app files from Github
+
 ## Launch cube server
+
+Get the files from Github
+```
+git clone git://github.com/DataBrewery/cubes.git
+```
+
 Move to the folder where the cubes viewer files are
 ```
 cd C:\cube\cubes-master\examples\hello_world
@@ -51,6 +63,12 @@ slicer serve slicer.ini
 
 ## Launch cubes viewer
 See [Cubes Viewer Instruction](https://github.com/jjmontesl/cubesviewer/blob/master/doc/guide/cubesviewer-gui-installation.md)
+
+
+Get the files from Github
+```
+git clone git://github.com/jjmontesl/cubesviewer.git
+```
 
 Move to the folder where the cubes viewer files are
 ```
