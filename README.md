@@ -41,9 +41,15 @@ pip install wsgiref
 
 You may also need to install the github client in order to donwload the app files from Github
 
-## Launch cube server
+## Cube server
+Create a folder to host all the files -- Can be done in a cmd in Win.
+```
+cd C:\
+mkdir cube
+cd C:\cube
+```
 
-Get the files from Github
+Get the files from Github - in Github shell
 ```
 git clone git://github.com/DataBrewery/cubes.git
 ```
@@ -61,7 +67,7 @@ slicer serve slicer.ini
 ```
 
 
-## Launch cubes viewer
+## Cubes viewer
 See [Cubes Viewer Instruction](https://github.com/jjmontesl/cubesviewer/blob/master/doc/guide/cubesviewer-gui-installation.md)
 
 
@@ -80,3 +86,14 @@ Then run the script
 python manage.py syncdb
 Python manage.py runserver
 ```
+## ProGres Cube
+Get the files from Github
+```
+git clone git://github.com/unhcr-mena/proGres-cube.git
+```
+
+Move to the folder where the cubes viewer files are
+```
+cd C:\cube\proGres-cube
+```
+
