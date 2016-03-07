@@ -46,15 +46,15 @@ Create a folder to host all the files -- Can be done in a cmd in Win.
 ```
 cd C:\
 mkdir cube
-cd C:\cube
 ```
 
 Get the files from Github - in Github shell
 ```
+cd C:\cube
 git clone git://github.com/DataBrewery/cubes.git
 ```
 
-Move to the folder where the cubes viewer files are
+In a regular cmd, move to the folder where the cubes viewer files are
 ```
 cd C:\cube\cubes\examples\hello_world
 ```
@@ -71,12 +71,13 @@ slicer serve slicer.ini
 See [Cubes Viewer Instruction](https://github.com/jjmontesl/cubesviewer/blob/master/doc/guide/cubesviewer-gui-installation.md)
 
 
-Get the files from Github
+Get the files from Github- in Github shell
 ```
+cd C:\cube
 git clone git://github.com/jjmontesl/cubesviewer.git
 ```
 
-Move to the folder where the cubes viewer files are
+In a regular cmd, move to the folder where the cubes viewer files are
 ```
 cd C:\cube\cubesviewer\src\web\project
 ```
@@ -87,8 +88,9 @@ python manage.py syncdb
 Python manage.py runserver
 ```
 ## ProGres Cube
-Get the files from Github
+Get the files from Github- in Github shell
 ```
+cd C:\cube
 git clone git://github.com/unhcr-mena/proGres-cube.git
 ```
 
